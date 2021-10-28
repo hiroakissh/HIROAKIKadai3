@@ -138,6 +138,13 @@
                             <constraint firstItem="XI4-6b-B8S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x7s-gQ-FuL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="num1Label" destination="Sgk-sd-CRj" id="An9-jV-Dmr"/>
+                        <outlet property="num1TextField" destination="mlX-rF-nif" id="yki-mW-FM5"/>
+                        <outlet property="num2Label" destination="6tS-Ri-hIk" id="flT-tu-BzX"/>
+                        <outlet property="num2TextField" destination="4dc-Cc-HvR" id="283-z3-Jxs"/>
+                        <outlet property="totalLabel" destination="ILA-Bc-ogF" id="zWz-Fr-7o6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
