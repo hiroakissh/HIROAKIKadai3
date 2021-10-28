@@ -57,6 +57,6 @@ class ViewController: UIViewController {
         } else {
             num2Label.text = String(num2)
         }
-        totalLabel.text = String(num2 + num2)
+        totalLabel.text = String(num1 + num2)
     }
 }
