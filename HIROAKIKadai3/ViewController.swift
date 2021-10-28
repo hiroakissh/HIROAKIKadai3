@@ -17,7 +17,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        UserDefaults.standard.set(true, forKey: "num1Symbol")
+        UserDefaults.standard.set(true, forKey: "num2Symbol")
     }
 
     @IBAction private func num1SymbolSwitch(_ sender: UISwitch) {
