@@ -29,5 +29,13 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func num2SymbolSwitch(_ sender: UISwitch) {
+        if sender.isOn == true{
+            UserDefaults.standard.set(true, forKey: "num2Symbol")
+        }else{
+            UserDefaults.standard.set(false,forKey: "num2Symbol")
+        }
+    }
+
 
 }
