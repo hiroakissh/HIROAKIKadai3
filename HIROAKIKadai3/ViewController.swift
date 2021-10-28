@@ -30,20 +30,33 @@ class ViewController: UIViewController {
     }
 
     @IBAction func num2SymbolSwitch(_ sender: UISwitch) {
-        if sender.isOn == true{
+        if sender.isOn == true  {
             UserDefaults.standard.set(true, forKey: "num2Symbol")
-        }else{
+        } else{
             UserDefaults.standard.set(false,forKey: "num2Symbol")
         }
     }
 
     @IBAction private func calcButton(_ sender: Any) {
-        let num1 = Int(num1TextField.text ?? "") ?? 0
-        let num2 = Int(num2TextField.text ?? "") ?? 0
+        var num1 = Int(num1TextField.text ?? "") ?? 0
+        var num2 = Int(num2TextField.text ?? "") ?? 0
 
         let num1Symbol = UserDefaults.standard.bool(forKey: "num1Symbol")
         let num2Symbol = UserDefaults.standard.bool(forKey: "num2Symbol")
 
-    }
+        if num1Symbol == true {
+            num1 = -num1
+            num1Label.text = String(num1)
+        } else {
+            num1Label.text = String(num1)
+        }
 
+        if num2Symbol == true {
+            num2 = -num2
+            num2Label.text = String(num2)
+        } else {
+            num2Label.text = String(num2)
+        }
+        totalLabel.text = String(num2 + num2)
+    }
 }
