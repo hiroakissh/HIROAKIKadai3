@@ -20,4 +20,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+
+    @IBAction func num1SymbolSwitch(_ sender: UISwitch) {
+        if sender.isOn == true{
+            UserDefaults.standard.set(true, forKey: "num1Symbol")
+        }else{
+            UserDefaults.standard.set(false,forKey: "num1Symbol")
+        }
+    }
+
+
 }
