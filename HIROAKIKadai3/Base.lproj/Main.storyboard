@@ -20,6 +20,9 @@
                                 <rect key="frame" x="173.5" y="209" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="calcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rkg-Bg-7Pn"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mlX-rF-nif">
                                 <rect key="frame" x="58" y="93" width="97" height="34"/>
@@ -47,6 +50,9 @@
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73G-37-oFH">
                                 <rect key="frame" x="270" y="135" width="51" height="31"/>
+                                <connections>
+                                    <action selector="num2SymbolSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="QmX-q2-9J6"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgk-sd-CRj">
                                 <rect key="frame" x="82" y="281" width="42" height="21"/>
