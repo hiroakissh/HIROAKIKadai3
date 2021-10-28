@@ -15,25 +15,24 @@ class ViewController: UIViewController {
     @IBOutlet private weak var num2Label: UILabel!
     @IBOutlet private weak var totalLabel: UILabel!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func num1SymbolSwitch(_ sender: UISwitch) {
-        if sender.isOn == true{
+    @IBAction private func num1SymbolSwitch(_ sender: UISwitch) {
+        if sender.isOn == true {
             UserDefaults.standard.set(true, forKey: "num1Symbol")
-        }else{
-            UserDefaults.standard.set(false,forKey: "num1Symbol")
+        } else {
+            UserDefaults.standard.set(false, forKey: "num1Symbol")
         }
     }
 
-    @IBAction func num2SymbolSwitch(_ sender: UISwitch) {
-        if sender.isOn == true  {
+    @IBAction private func num2SymbolSwitch(_ sender: UISwitch) {
+        if sender.isOn == true {
             UserDefaults.standard.set(true, forKey: "num2Symbol")
-        } else{
-            UserDefaults.standard.set(false,forKey: "num2Symbol")
+        } else {
+            UserDefaults.standard.set(false, forKey: "num2Symbol")
         }
     }
 
