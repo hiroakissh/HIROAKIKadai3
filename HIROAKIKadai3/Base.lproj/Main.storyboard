@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,15 +44,9 @@
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tpf-Ig-0Wy">
                                 <rect key="frame" x="82" y="135" width="51" height="31"/>
-                                <connections>
-                                    <action selector="num1SymbolSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="noe-C7-epX"/>
-                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73G-37-oFH">
                                 <rect key="frame" x="270" y="135" width="51" height="31"/>
-                                <connections>
-                                    <action selector="num2SymbolSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="QmX-q2-9J6"/>
-                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgk-sd-CRj">
                                 <rect key="frame" x="82" y="281" width="42" height="21"/>
@@ -152,6 +146,8 @@
                         <outlet property="num1TextField" destination="mlX-rF-nif" id="yki-mW-FM5"/>
                         <outlet property="num2Label" destination="6tS-Ri-hIk" id="flT-tu-BzX"/>
                         <outlet property="num2TextField" destination="4dc-Cc-HvR" id="283-z3-Jxs"/>
+                        <outlet property="sign1Switch" destination="tpf-Ig-0Wy" id="kgc-Mw-jn7"/>
+                        <outlet property="sign2Switch" destination="73G-37-oFH" id="30n-ca-jFE"/>
                         <outlet property="totalLabel" destination="ILA-Bc-ogF" id="zWz-Fr-7o6"/>
                     </connections>
                 </viewController>
