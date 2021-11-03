@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var totalLabel: UILabel!
     @IBOutlet weak var sign1Switch: UISwitch!
     @IBOutlet weak var sign2Switch: UISwitch!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -37,8 +37,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction private func calcButton(_ sender: Any) {
-        var num1 = Int(num1TextField.text ?? "") ?? 0
-        var num2 = Int(num2TextField.text ?? "") ?? 0
+        let num1 = Int(num1TextField.text ?? "") ?? 0
+        let num2 = Int(num2TextField.text ?? "") ?? 0
 
         let num1Symbol = UserDefaults.standard.bool(forKey: "num1Symbol")
         let num2Symbol = UserDefaults.standard.bool(forKey: "num2Symbol")
