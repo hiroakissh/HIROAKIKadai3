@@ -40,9 +40,6 @@ class ViewController: UIViewController {
         let num1 = Int(num1TextField.text ?? "") ?? 0
         let num2 = Int(num2TextField.text ?? "") ?? 0
 
-        let num1Symbol = UserDefaults.standard.bool(forKey: "num1Symbol")
-        let num2Symbol = UserDefaults.standard.bool(forKey: "num2Symbol")
-
         let signNum1: Int
         let signNum2: Int
 
