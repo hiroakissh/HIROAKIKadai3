@@ -13,7 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet private weak var num1Label: UILabel!
     @IBOutlet private weak var num2Label: UILabel!
     @IBOutlet private weak var totalLabel: UILabel!
-
+    @IBOutlet weak var sign1Switch: UISwitch!
+    @IBOutlet weak var sign2Switch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

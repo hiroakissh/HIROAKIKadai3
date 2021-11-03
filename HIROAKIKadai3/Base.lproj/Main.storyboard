@@ -144,6 +144,8 @@
                         <outlet property="num1TextField" destination="mlX-rF-nif" id="yki-mW-FM5"/>
                         <outlet property="num2Label" destination="6tS-Ri-hIk" id="flT-tu-BzX"/>
                         <outlet property="num2TextField" destination="4dc-Cc-HvR" id="283-z3-Jxs"/>
+                        <outlet property="sign1Switch" destination="tpf-Ig-0Wy" id="JYt-8J-1Zh"/>
+                        <outlet property="sign2Switch" destination="73G-37-oFH" id="ybH-XG-y2d"/>
                         <outlet property="totalLabel" destination="ILA-Bc-ogF" id="zWz-Fr-7o6"/>
                     </connections>
                 </viewController>
