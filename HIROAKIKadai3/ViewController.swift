@@ -45,5 +45,21 @@ class ViewController: UIViewController {
 
         let signNum1: Int
         let signNum2: Int
+
+        if sign1Switch.isOn {
+            signNum1 = -num1
+        } else {
+            signNum1 = num1
+        }
+
+        if sign2Switch.isOn {
+            signNum2 = -num2
+        } else {
+            signNum2 = num2
+        }
+
+        num1Label.text = String(signNum1)
+        num2Label.text = String(signNum2)
+        totalLabel.text = String(signNum1 + signNum2)
     }
 }
