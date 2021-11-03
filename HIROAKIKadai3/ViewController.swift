@@ -43,19 +43,7 @@ class ViewController: UIViewController {
         let num1Symbol = UserDefaults.standard.bool(forKey: "num1Symbol")
         let num2Symbol = UserDefaults.standard.bool(forKey: "num2Symbol")
 
-        if num1Symbol == true {
-            num1 = -num1
-            num1Label.text = String(num1)
-        } else {
-            num1Label.text = String(num1)
-        }
-
-        if num2Symbol == true {
-            num2 = -num2
-            num2Label.text = String(num2)
-        } else {
-            num2Label.text = String(num2)
-        }
-        totalLabel.text = String(num1 + num2)
+        let signNum1: Int
+        let signNum2: Int
     }
 }
