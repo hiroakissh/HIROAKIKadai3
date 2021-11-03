@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet private weak var num1TextField: UITextField!
     @IBOutlet private weak var num2TextField: UITextField!
     @IBOutlet private weak var num1Label: UILabel!
@@ -17,8 +16,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UserDefaults.standard.set(true, forKey: "num1Symbol")
-        UserDefaults.standard.set(true, forKey: "num2Symbol")
     }
 
     @IBAction private func num1SymbolSwitch(_ sender: UISwitch) {
